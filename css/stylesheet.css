@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
+
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
 body {background-color: #4eb2b0; }
 
+h2 { font-family: 'Bangers', cursive;}
 .header {
 	overflow: hidden; 
 	background-color: #4eb2b0; 
 	padding: 20px 10px; 
-	font-family: grorgia;
+	font-size: 40px;
+	font-family: 'Bangers', cursive;
+	
 }
 	
 .header a {
@@ -16,14 +21,15 @@ body {background-color: #4eb2b0; }
 	text-align: center;
 	padding: 12px; 
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 40px;
 	line-height:25px; 
 	border-radius: 4px;
 }
 
 .header a.logo{
-	font-size: 25px; 
+	font-size: 40px; 
 	font-weight:bold; 
+	color: Red;
 }
 
 
@@ -220,16 +226,22 @@ h2 {
 }
 
 .title {
-  color: grey;
-  text-align: center;
-}
+	color: grey;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	}
 
 .desc{
 	text-align: center;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .email{
-text-align: center;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 .button {
   border: none;
@@ -256,6 +268,12 @@ text-align: center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.wording{
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	
+	
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -284,9 +302,3 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
