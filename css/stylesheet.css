@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
@@ -14,6 +15,17 @@ h2 { font-family: 'Bangers', cursive;}
 	font-family: 'Bangers', cursive;
 	
 }
+
+.circle{
+	width: 15%;
+	height: auto;
+	border: solid 2px red;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 	
 .header a {
 	float: left; 
@@ -97,7 +109,7 @@ color: #4eb2b0;
 }
 
 
-img {
+.slidimg {
   width: 100%;
   height: auto;
   padding: 5px;
@@ -174,17 +186,25 @@ h2 {
 .column {
 	margin: auto;
   float: left;
-  width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
  
 }
 
+.twocolumns{
+	width: 50%; 
+}
+
+.threecolumns{
+	width: 33.3%;
+}
 .group {
 	margin: auto;
 	margin-left: 
 	width: 100%;
 	padding: 10px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	
 }
 
@@ -215,7 +235,46 @@ h2 {
 /* Some left and right padding inside the container */
 .container {
   padding: 0 16px;
+}
 
+.ovcont {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.ovcont:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
 }
 
 /* Clear floats */
@@ -266,6 +325,11 @@ h2 {
 .borderbox{
 	margin: 50px 100px 100px 100px; /* margin top, margin right, Margin bottom, Margin left*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.borderboxns{
+		margin: 50px 100px 100px 100px; /* margin top, margin right, Margin bottom, Margin left*/
+
 }
 
 .wording{
