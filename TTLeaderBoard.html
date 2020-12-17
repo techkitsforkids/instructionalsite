@@ -137,7 +137,7 @@ text-transform:uppercase;}
 		<form id = "results1" name="results1" >
 		Name:&nbsp;&nbsp;<input type ="text" id="namet1" name = "namet1">
 		Grams:&nbsp;<input type ="number" id="gramst1" name = "gramst1">
-		Email:&nbsp;&nbsp;<input type ="email" id="emailt1" name = "emailt1">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt1" name = "emailt1"><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT1()" value="submit">
 		<p id="empty"></p>
 		</form>
@@ -148,7 +148,7 @@ text-transform:uppercase;}
 		<form id = "results2" name="results2" >
 		Name:&nbsp;&nbsp;<input type ="text" id="namet2" name = "namet2">
 		Grams:&nbsp;<input type ="number" id="gramst2" name = "gramst2">
-		Email:&nbsp;&nbsp;<input type ="email" id="emailt2" name = "emailt2">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt2" name = "emailt2"><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT2()" value="submit">
 		<p id="empty2"></p>
 		</form>
@@ -158,8 +158,9 @@ text-transform:uppercase;}
 
 	<div class = "row" ><div class = "columnlb"><h1 id="tableTitle3"></h1></div></div>
 
-	<div class = "rowlb">
-		<div id = "block" class ="columnlb">
+	<div class = "rowlb" >
+	<div style = "position: relative; text-align: center;"><div style = "position: absolute; bottom: 10px; left: 70px"><img src = "img/brain.png" alt = "brain" /></div></div>
+		<div id = "block" class ="columnlb" >
 		
 		<table class = "center">
 				<col style="width:70%">
@@ -198,7 +199,7 @@ text-transform:uppercase;}
 			
 		</table>
 		</div>
-
+	<div style = "position: relative; text-align: center;"><div style = "position: absolute; bottom: 20px; right: 5px"><img class="animated-gif" src = "img/boat.gif" alt = "brain" /></div></div>
 	</div>
 
 	<div class = "rowlb">
@@ -207,7 +208,7 @@ text-transform:uppercase;}
 		<form id = "results3" name="results3" >
 		Name:&nbsp;&nbsp;<input type ="text" id="namet3" name = "namet3">
 		Grams:&nbsp;<input type ="number" id="gramst3" name = "gramst3">
-		Email:&nbsp;&nbsp;<input type ="email" id="emailt3" name = "emailt3">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt3" name = "emailt3"><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT3()" value="submit">
 		<p id="empty3"></p>
 		</form>
@@ -231,7 +232,13 @@ text-transform:uppercase;}
 
 <script type="text/javascript">
     document.getElementById("results").onclick = function () {
-        location.href = "result.html";
+        
+		window.open(
+		'result.html',
+		'_blank'
+		
+		);
+		
     };
 
 </script>

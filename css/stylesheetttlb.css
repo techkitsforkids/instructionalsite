@@ -21,7 +21,7 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2;}
 tr:nth-child(odd){background-color: #f5e1e1;}
 th {
-  background-color: #6bb5f1;
+  background-color: #4472C4;
   color: white;
 }
 
@@ -105,4 +105,9 @@ input[type=button]:hover, #result:hover {
 	border: 20px solid #ff5757;
 	padding: 10px;
 	background: red;
+}
+
+img.animated-gif{
+  width: 400px;
+  height: auto;
 }
