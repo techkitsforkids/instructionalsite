@@ -1,16 +1,41 @@
 <html>
 <head>
+	<title>Input Title</title>
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
    <script language="javascript" type="text/javascript" src="js/function.js"></script>
+<style>
+
+html {
+  background: url(img/backgroundlb.png) no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+
+}
+h1{ text-align: center;}
+</style>
 </head>
 
 <body>
+<div class = "borderboxns">
+<div class = "row">
+	<h1>Leader Board Titles</h1>
+</div>
+	<div class = "row">
 
-<form name="form1" action="TTLeaderBoard.html" method="get">
-Table 1 Name:<input type ="text" id="name" name="n">
-Table 2 Name:<input type ="text" id="name2" name="n2">
-Table 3 Name:<input type ="text" id="name3" name="n3">
-<input type="submit" value="next" >
-<!--<button type="button" id="print" onClick="testJS()"> Print </button>-->
-</form>
+		<div id = "block" class = "center">
+			<form name="form1" action="TTLeaderBoard.html" method="get">
+			<span>Table 1 Name:</span style = ""> <input type ="text" id="name" name="n">
+			Table 2 Name: <input type ="text" id="name2" name="n2">
+			Table 3 Name: <input type ="text" id="name3" name="n3">
+			<input type="submit" value="next" >
+			<!--<button type="button" id="print" onClick="testJS()"> Print </button>-->
+			</form>
+		</div>
+	</div>
+</div>
 </body>
 </html>

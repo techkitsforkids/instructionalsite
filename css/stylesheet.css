@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
-body {background-color: #4eb2b0; }
+
 
 h2 { font-family: 'Bangers', cursive;}
 .header {
@@ -344,7 +345,7 @@ input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 5px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
@@ -353,16 +354,31 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #6bb5f1;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #72c0ff;
+  
+  
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+
+}
+
+#block{
+	border: 20px solid red;
+	padding: 10px;
+	border-radius: 15px 50px 30px; /*first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner*/
+	background: red;
+}

@@ -6,6 +6,8 @@
 <title>Page Title</title>​
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/stylesheetttlb.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="js/function.js"></script>
 	
 	<script>
@@ -23,6 +25,18 @@
 	return false;
 }
 	</script>
+	
+	<style>
+
+html {
+  background: url(img/backgroundlb.png) no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+
+}
+h1{ text-align: center;
+text-transform:uppercase;}
+</style>
 
 </head>​
 <bodyonload="function()"​
@@ -30,171 +44,197 @@
 
 <div class - "grid">
 <h1>Leader Board</h1>
-<div class = "row">
+	<div class = "row" ><div class = "columnlb"><h1 id="tableTitle1"></h1></div><div class = "columnlb"><h1 id="tableTitle2"></h1></div></div>
+	<div class = "rowlb">
 
-<div class = "column">
+		<div id = "block" class = "columnlb">
 
-<h1 id="tableTitle1"></h1>
-
-<table class = "center">
-
-	<tr>
 		
-		<th>Name</th>
-		<th>Grams</th>
+
+		<table class = "center">
+				<col style="width:70%">
+				<col style="width:30%">
+			<tr>
+				
+				<th>Name</th>
+				<th>Grams</th>
+				
+				
+			</tr>
+			
+			<tr>
+				
+				<td id = "t1nameL1" class = "name"></td>
+				<td id = "t1gramsL1" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t1nameL2" class = "name"></td>
+				<td id = "t1gramsL2" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t1nameL3" class = "name"></td>
+				<td id = "t1gramsL3" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t1nameL4" class = "name"></td>
+				<td id = "t1gramsL4" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t1nameL5" class = "name"></td>
+				<td id = "t1gramsL5" class = "grams"></td>
+			</tr>
+			
+		</table>
+		</div>
+
+
+		<div id = "block" class = "columnlb">
 		
-		
-	</tr>
+		<table class = "center">
+				<col style="width:70%">
+				<col style="width:30%">
+			<tr>
+				
+				<th>Name</th>
+				<th>Grams</th>
+				
+				
+			</tr>
+			
+			<tr>
+				
+				<td id = "t2nameL1" class = "name"></td>
+				<td id = "t2gramsL1" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t2nameL2" class = "name"></td>
+				<td id = "t2gramsL2" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t2nameL3" class = "name"></td>
+				<td id = "t2gramsL3" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t2nameL4" class = "name"></td>
+				<td id = "t2gramsL4" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t2nameL5" class = "name"></td>
+				<td id = "t2gramsL5" class = "grams"></td>
+			</tr>
+			
+		</table>
+		</div>
+	</div>
 	
-	<tr>
+	<div class = "rowlb">
+		<div class = "columnlb">
+
+		<form id = "results1" name="results1" >
+		Name:&nbsp;&nbsp;<input type ="text" id="namet1" name = "namet1">
+		Grams:&nbsp;<input type ="number" id="gramst1" name = "gramst1">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt1" name = "emailt1">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT1()" value="submit">
+		<p id="empty"></p>
+		</form>
+
+		</div>
+
+		<div class = "columnlb">
+		<form id = "results2" name="results2" >
+		Name:&nbsp;&nbsp;<input type ="text" id="namet2" name = "namet2">
+		Grams:&nbsp;<input type ="number" id="gramst2" name = "gramst2">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt2" name = "emailt2">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT2()" value="submit">
+		<p id="empty2"></p>
+		</form>
+		</div>
+
+	</div>
+
+	<div class = "row" ><div class = "columnlb"><h1 id="tableTitle3"></h1></div></div>
+
+	<div class = "rowlb">
+		<div id = "block" class ="columnlb">
 		
-		<td id = "t1nameL1" class = "name"></td>
-		<td id = "t1gramsL1" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t1nameL2" class = "name"></td>
-		<td id = "t1gramsL2" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t1nameL3" class = "name"></td>
-		<td id = "t1gramsL3" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t1nameL4" class = "name"></td>
-		<td id = "t1gramsL4" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t1nameL5" class = "name"></td>
-		<td id = "t1gramsL5" class = "grams"></td>
-	</tr>
+		<table class = "center">
+				<col style="width:70%">
+				<col style="width:30%">
+			<tr>
+				
+				<th>Name</th>
+				<th>Grams</th>
+				
+				
+			</tr>
+			
+			<tr>
+				
+				<td id = "t3nameL1" class = "name"></td>
+				<td id = "t3gramsL1" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t3nameL2" class = "name"></td>
+				<td id = "t3gramsL2" class = "grams"></td>
+				
+			</tr>
+			<tr>
+				<td id = "t3nameL3" class = "name"></td>
+				<td id = "t2gramsL3" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t3nameL4" class = "name"></td>
+				<td id = "t3gramsL4" class = "grams"></td>
+			</tr>
+			<tr>
+				<td id = "t3nameL5" class = "name"></td>
+				<td id = "t3gramsL5" class = "grams"></td>
+			</tr>
+			
+		</table>
+		</div>
+
+	</div>
+
+	<div class = "rowlb">
+		<div class = "columnlb">
+
+		<form id = "results3" name="results3" >
+		Name:&nbsp;&nbsp;<input type ="text" id="namet3" name = "namet3">
+		Grams:&nbsp;<input type ="number" id="gramst3" name = "gramst3">
+		Email:&nbsp;&nbsp;<input type ="email" id="emailt3" name = "emailt3">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick = "saveObjectT3()" value="submit">
+		<p id="empty3"></p>
+		</form>
+
+		</div>
+
+
+
+	</div>
 	
-</table>
-</div>
-
-
-<div class = "column">
-<h1 id="tableTitle2"></h1>
-<table class = "center">
-	<tr>
-		
-		<th>Name</th>
-		<th>Grams</th>
-		
-		
-	</tr>
+	<div class = "rowlb">
+	<div class = "columnlb">
+	<div class = "center">
 	
-	<tr>
-		
-		<td id = "t2nameL1" class = "name"></td>
-		<td id = "t2gramsL1" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t2nameL2" class = "name"></td>
-		<td id = "t2gramsL2" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t2nameL3" class = "name"></td>
-		<td id = "t2gramsL3" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t2nameL4" class = "name"></td>
-		<td id = "t2gramsL4" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t2nameL5" class = "name"></td>
-		<td id = "t2gramsL5" class = "grams"></td>
-	</tr>
-	
-</table>
-</div>
-</div>
-<div class = "row">
-<div class = "column">
-
-<form id = "results1" name="results1" >
-Name:<input type ="text" id="namet1" name = "namet1">
-Grams:<input type ="number" id="gramst1" name = "gramst1">
-Email:<input type ="email" id="emailt1" name = "emailt1">
-<input type="button" onclick = "saveObjectT1()" value="submit">
-<p id="empty"></p>
-</form>
+		<button id="results">results</button>
+	</div>
+	</div>
+	</div>
 
 </div>
 
-<div class = "column">
-<form id = "results2" name="results2" >
-Name:<input type ="text" id="namet2" name = "namet2">
-Grams:<input type ="number" id="gramst2" name = "gramst2">
-Email:<input type ="email" id="emailt2" name = "emailt2">
-<input type="button" onclick = "saveObjectT2()" value="submit">
-<p id="empty2"></p>
-</form>
-</div>
+<script type="text/javascript">
+    document.getElementById("results").onclick = function () {
+        location.href = "result.html";
+    };
 
-</div>
-
-<div class = "row">
-<div class ="column">
-<h1 id="tableTitle3"></h1>
-<table class = "center">
-	<tr>
-		
-		<th>Name</th>
-		<th>Grams</th>
-		
-		
-	</tr>
-	
-	<tr>
-		
-		<td id = "t3nameL1" class = "name"></td>
-		<td id = "t3gramsL1" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t3nameL2" class = "name"></td>
-		<td id = "t3gramsL2" class = "grams"></td>
-		
-	</tr>
-	<tr>
-		<td id = "t3nameL3" class = "name"></td>
-		<td id = "t2gramsL3" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t3nameL4" class = "name"></td>
-		<td id = "t3gramsL4" class = "grams"></td>
-	</tr>
-	<tr>
-		<td id = "t3nameL5" class = "name"></td>
-		<td id = "t3gramsL5" class = "grams"></td>
-	</tr>
-	
-</table>
-</div>
-
-</div>
-
-<div class = "row">
-<div class = "column">
-
-<form id = "results3" name="results3" >
-Name:<input type ="text" id="namet3" name = "namet3">
-Grams:<input type ="number" id="gramst3" name = "gramst3">
-Email:<input type ="email" id="emailt3" name = "emailt3">
-<input type="button" onclick = "saveObjectT3()" value="submit">
-<p id="empty3"></p>
-</form>
-
-</div>
-
-
-
-</div>
-</div>
+</script>
 </body>​
 
 </html>

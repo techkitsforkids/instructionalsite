@@ -1,8 +1,13 @@
 
-var table1Names =[];
-var table2Names =[];
-var table3Names =[];
-
+if(localStorage.getItem('textValues') == null){
+	var table1Names =[];
+	var table2Names =[];
+	var table3Names =[];
+}else{
+	table1Names =  JSON.parse(localStorage.getItem('textValues'));
+	table2Names =  JSON.parse(localStorage.getItem('textValues'));
+	table3Names =  JSON.parse(localStorage.getItem('textValues'));
+}
 
 function testJS() {
     var b = document.getElementById('name').value,
@@ -47,6 +52,7 @@ function saveObjectT1(){
 	  table1Names.push(guest); 
 	  
 	  table1Names.sort(function(a, b){return b.grams-a.grams});
+	  	localStorage.setItem('textValues', JSON.stringify(table1Names));
 	  x=1;
 		for(i=0; i <table1Names.length; ++i){
 		
@@ -105,6 +111,7 @@ function saveObjectT2(){
 	  table2Names.push(guest); 
 	  
 	  table2Names.sort(function(a, b){return b.grams-a.grams});
+	  localStorage.setItem('textValues', JSON.stringify(table2Names));
 	  x=1;
 		for(i=0; i <table2Names.length; ++i){
 		
@@ -163,6 +170,7 @@ function saveObjectT3(){
 	  table3Names.push(guest); 
 	  
 	  table3Names.sort(function(a, b){return b.grams-a.grams});
+	  localStorage.setItem('textValues', JSON.stringify(table3Names));
 	  x=1;
 		for(i=0; i <table3Names.length; ++i){
 		
@@ -184,4 +192,60 @@ function saveObjectT3(){
 		console.log(table3Names);
   
   return false;
+}
+
+function table1Results(){
+			var parsed = "table 1\n";
+		 
+		for (i = 0; i< table1Names.length; i++) {
+			var myobj=  table1Names[i];
+			
+			for (var property in myobj) {
+				parsed += property + ": " + myobj[property] + "\n";          
+			}
+		} 
+		
+		$("#display").val(parsed); 
+
+	return false;
+}
+
+function table2Results(){
+			var parsed = "table 2\n";
+		
+		for (i = 0; i< table2Names.length; i++) {
+			var myobj=  table2Names[i];
+			
+			for (var property in myobj) {
+				parsed += property + ": " + myobj[property] + "\n";          
+			}
+		} 
+		
+		$("#display2").val(parsed); 
+
+	return false;
+}
+
+function table3Results(){
+			var parsed = "table 3\n";
+		 
+		for (i = 0; i< table3Names.length; i++) {
+			var myobj=  table3Names[i];
+			
+			for (var property in myobj) {
+				parsed += property + ": " + myobj[property] + "\n";          
+			}
+		} 
+		
+		$("#display3").val(parsed); 
+
+	return false;
+}
+
+function clearall(){
+	localStorage.clear();
+	table1Names =[];
+	table2Names =[];
+	table3Names =[];
+	
 }
